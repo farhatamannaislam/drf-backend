@@ -41,6 +41,10 @@ ALLOWED_HOSTS = ["8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.
     ".herokuapp.com"]
 
 
+# settings.py
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net']
+
 # Application definition
 
 INSTALLED_APPS = [
