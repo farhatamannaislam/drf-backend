@@ -118,14 +118,14 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 
- if 'CLIENT_ORIGIN' in os.environ:
-     CORS_ALLOWED_ORIGINS = [
+if 'CLIENT_ORIGIN' in os.environ:
+    CORS_ALLOWED_ORIGINS = [
          os.environ.get('CLIENT_ORIGIN')
-     ]
- else:
+    ]
+else:
      CORS_ALLOWED_ORIGIN_REGEXES = [
          r"^https://.*\.gitpod\.io$",
-     ]
+    ]
 
 CORS_ALLOW_CREDENTIALS = True
 
