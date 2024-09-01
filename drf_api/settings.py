@@ -37,7 +37,8 @@ SECRET_KEY = 'django-insecure-ro9*k(4_$yr36zar9n(tp$7whcn!nl02x=y&l*&l@d@_8v1klb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net",
+    ".herokuapp.com"]
 
 
 # Application definition
@@ -51,6 +52,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'profiles',
 ]
 
 MIDDLEWARE = [
