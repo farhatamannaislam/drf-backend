@@ -150,6 +150,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net',
+    'https://drf-api-rc-fb80a7a94541.herokuapp.com'
 ]
 
 
