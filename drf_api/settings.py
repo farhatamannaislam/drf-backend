@@ -148,6 +148,11 @@ CORS_ALLOWED_ORIGINS = [
     'https://3000-farhatamannaisl-moments-hbbz0lit157.ws.codeinstitute-ide.net',   
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net',
+]
+
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
