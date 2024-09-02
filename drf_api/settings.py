@@ -144,7 +144,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'drf_api.wsgi.application'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    'https://3000-farhatamannaisl-moments-hbbz0lit157.ws.codeinstitute-ide.net',   
+]
+
 
 
 # Database
