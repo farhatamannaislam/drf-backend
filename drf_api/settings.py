@@ -67,13 +67,10 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'),
-    'localhost',]
-
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost','8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net']
+    
 
 # settings.py
-
-CSRF_TRUSTED_ORIGINS = ['https://8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net']
 
 # Application definition
 
