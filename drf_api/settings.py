@@ -116,11 +116,18 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 
-if 'CLIENT_ORIGIN_DEV' in os.environ:
-    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
-    CORS_ALLOWED_ORIGIN_REGEXES = [
-        rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+# if 'CLIENT_ORIGIN_DEV' in os.environ:
+#     extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
+#     CORS_ALLOWED_ORIGIN_REGEXES = [
+#         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+#     ]
+
+if 'CLIENT_ORIGIN' in os.environ:
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN')
     ]
+if 'CLIENT_ORIGIN_DEV' in os.environ:    
+    CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$",]
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -144,9 +151,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'drf_api.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [
-    'https://3000-farhatamannaisl-moments-hbbz0lit157.ws.codeinstitute-ide.net',   
-]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net',
