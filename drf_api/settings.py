@@ -65,9 +65,9 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost','8000-farhatamanna-drfbackend-0zbrj71mlbx.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost',]
     
 
 # settings.py
