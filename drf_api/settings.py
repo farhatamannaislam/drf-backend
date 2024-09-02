@@ -144,11 +144,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'drf_api.wsgi.application'
 
-# CORS_ALLOWED_ORIGINS = [
-#     'https://3000-farhatamannaisl-moments-hbbz0lit157.ws.codeinstitute-ide.net',   
-# ]
+CORS_ALLOWED_ORIGINS = [
+    'https://3000-farhatamannaisl-moments-hbbz0lit157.ws.codeinstitute-ide.net',   
+]
 
-CORS_ALLOW_ALL_ORIGINS = True
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
