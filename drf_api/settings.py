@@ -65,7 +65,7 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost','8000-farhatamanna-drfbackend-63d74126hc6.ws.codeinstitute-ide.net']
     
@@ -127,6 +127,8 @@ if 'CLIENT_ORIGIN' in os.environ:
     ]
 if 'CLIENT_ORIGIN_DEV' in os.environ:    
     CORS_ALLOWED_ORIGIN_REGEXES = [r"^https://.*\.codeinstitute-ide\.net$",]
+
+CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
